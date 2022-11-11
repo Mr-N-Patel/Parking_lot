@@ -1,4 +1,7 @@
 """vehicle module"""
+import datetime
+
+
 
 
 class Vehicle:
@@ -12,11 +15,11 @@ class Vehicle:
         self.v_width = width
         self.v_length = length
 
-    def in_time(self):
-        pass
+    def exit_time(self):
+        out_time = datetime.datetime.now()
 
-    def out_time(self):
-        pass
+    def entry_time(self):
+        self.intime = datetime.datetime.now()
 
 
 class Car(Vehicle):
